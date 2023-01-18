@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     body{
@@ -31,6 +32,7 @@
     }
 }
 
+/* Telas Maiores */
 @media screen and (min-width: 992px) {
 
     body{
