@@ -1,11 +1,26 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'titulo';
+    src: url(../Fontes/static/RobotoMono-LightItalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'padrao';
+    src: url(../Fontes/Quicksand-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --cor1: #4ACEDD;
     --cor2: #1B9DAA;
     --cor3: #025865;
     --cor4: #003F4E;
     --cor5: #0A0000;
+    --fonte-titulo: 'titulo', cursive;
 }
 
 *{
@@ -24,6 +39,49 @@ span#burguer{
     text-align: center;
     background-color: var(--cor5);
     color: var(--cor2);
+    cursor: pointer;
 }
-.container > #menu{
+
+menu{
+    display: none;
+    background-color: var(--cor1);
+    text-align: center;
+    box-shadow: 2px 5px var(--cor4);
+}
+
+menu > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px rgb(99, 98, 98);
+}
+
+menu > ul > li > a:hover{
+    background-color: var(--cor3);
+}
+
+.main > .dinamico > h1{
+    display: inline-block;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 3.5em;
+    border-right: 2px solid rgb(255, 255, 255, .75);
+    color: white;
+}
+
+div#perfil{
+    display: block;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    background: url(../Imagens/foto\ de\ perfil.jpeg);
+    background-position: center center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+@keyframes typing{
+    from{
+        border-right-color: ;
+    }
 }
