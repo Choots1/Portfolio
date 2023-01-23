@@ -62,12 +62,13 @@ menu > ul > li > a:hover{
 }
 
 .main > .dinamico > h1{
-    display: inline-block;
     text-align: center;
     font-family: var(--fonte-titulo);
     font-size: 3.5em;
     border-right: 2px solid rgb(255, 255, 255, .75);
     color: white;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 div#perfil{
@@ -80,8 +81,24 @@ div#perfil{
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 
-@keyframes typing{
+.cursor{
+    animation: blinkCursor 500ms infinite normal, typing 4s normal;
+}
+
+@keyframes blinkCursor{
     from{
-        border-right-color: ;
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
     }
 }
