@@ -82,7 +82,8 @@ div#perfil{
 }
 
 .cursor{
-    animation: blinkCursor 500ms infinite normal, typing 4s normal;
+    animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) normal both;
 }
 
 @keyframes blinkCursor{
