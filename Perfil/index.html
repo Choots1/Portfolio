@@ -12,19 +12,36 @@
 <body onresize="mudouTamanho()">
     <div class="container">
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        <menu id="menu">
+        <nav id="menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Objetivos</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba1" checked>
+                    <a href="#"><label for="aba1">Home</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba2">
+                    <a href="#"><label for="aba2">Objetivos</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba3">
+                    <a href="#"><label for="aba3">Portfólio</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba4">
+                    <a href="#"><label for="aba4">Contato</label></a>
+                </li>
             </ul>
-        </menu>
+        </nav>
         <div class="main">
             <span class="dinamico">
                 <h1 class="cursor">Níkolas Ferrante</h1>
+                <h2>Front-End Student</h2>
             </span>
             <div id="perfil"></div>
+            <div class="janela">
+                <img src="Imagens/janela800.png" alt="janela">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea deleniti vel, totam, quo mollitia quibusdam alias nostrum praesentium molestiae saepe illo aperiam dolor eum, provident facilis repellendus nemo eaque non.</p>
+            </div>
         </div>
     </div>
     <script>

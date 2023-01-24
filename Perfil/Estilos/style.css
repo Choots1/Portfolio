@@ -21,6 +21,7 @@
     --cor4: #003F4E;
     --cor5: #0A0000;
     --fonte-titulo: 'titulo', cursive;
+    --fonte-padrao: 'padrao', sans-serif;
 }
 
 *{
@@ -29,7 +30,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor4));
     height: 100vh;
 }
@@ -42,14 +43,14 @@ span#burguer{
     cursor: pointer;
 }
 
-menu{
+nav{
     display: none;
     background-color: var(--cor1);
     text-align: center;
     box-shadow: 2px 5px var(--cor4);
 }
 
-menu > ul > li > a{
+nav > ul > li > a{
     display: block;
     text-decoration: none;
     color: white;
@@ -57,7 +58,11 @@ menu > ul > li > a{
     box-shadow: 2px 2px rgb(99, 98, 98);
 }
 
-menu > ul > li > a:hover{
+.abas{
+    display: none;
+}
+
+nav > ul > li > a:hover{
     background-color: var(--cor3);
 }
 
@@ -71,19 +76,47 @@ menu > ul > li > a:hover{
     overflow: hidden;
 }
 
+h2{
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
 div#perfil{
+    border: 30px solid #0A0000;
     display: block;
     height: 500px;
     width: 600px;
     margin: auto;
     background: url(../Imagens/foto\ de\ perfil.jpeg);
     background-position: center center;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.janela{
+    display: flex;
+    align-items: center;
+}
+
+.janela > img{
+    margin: auto;
+    width: 800px;
+}
+
+.janela > p {
+    font-family: var(--fonte-padrao);
+    text-indent: 50px;
+    text-align: justify;
+    width: 600px;
+    position: absolute;
+    align-self: center;
+    color: white;
 }
 
 .cursor{
-    animation: blinkCursor 500ms steps(40) infinite normal,
-    typing 4s steps(40) normal both;
+    animation: blinkCursor 500ms steps(30) infinite normal,
+    typing 3s steps(30) normal both;
 }
 
 @keyframes blinkCursor{
