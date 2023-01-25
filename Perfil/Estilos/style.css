@@ -32,7 +32,7 @@
 
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor4));
-    height: 100vh;
+    height: 100%;
 }
 
 span#burguer{
@@ -84,6 +84,7 @@ h2{
 }
 
 div#perfil{
+    position: relative;
     border: 30px solid #0A0000;
     display: block;
     height: 500px;
@@ -95,23 +96,33 @@ div#perfil{
 }
 
 .janela{
+    position: relative;
     display: flex;
-    align-items: center;
+    margin: 20px auto;
+    width: 700px;
 }
 
 .janela > img{
-    margin: auto;
+    position: relative;
     width: 800px;
 }
 
-.janela > p {
+.branco{
+    background-color: rgba(255, 255, 255, 0.651);
+    position: absolute;
+    width: 660px;
+    top: 117px;
+    left: 21px;
+}
+
+.branco > p {
     font-family: var(--fonte-padrao);
     text-indent: 50px;
     text-align: justify;
-    width: 600px;
-    position: absolute;
     align-self: center;
+    font-size: 1.5em;
     color: white;
+    margin: auto;
 }
 
 .cursor{
