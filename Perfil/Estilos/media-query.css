@@ -8,3 +8,26 @@
     Desktop : 992px a 1200px
     Telas Maiores : mais que 1200px 
 */
+
+@media screen and (min-width: 768px){
+    span#burguer{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        width: 100vw;
+        box-shadow: 2px 5px var(--cor5);
+    }
+
+    #menu > ul > li{
+        display: inline-block;
+        border-right: 2px solid black;
+        letter-spacing: 3px;
+    }
+
+    #menu > ul > li > a{
+        box-shadow: none;
+        margin: 0 50px;
+    }
+}

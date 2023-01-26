@@ -53,7 +53,9 @@ nav{
 nav > ul > li > a{
     display: block;
     text-decoration: none;
+    font-family: var(--fonte-titulo);
     color: white;
+    font-weight: bold;
     padding: 10px;
     box-shadow: 2px 2px rgb(99, 98, 98);
 }
@@ -62,8 +64,13 @@ nav > ul > li > a{
     display: none;
 }
 
-nav > ul > li > a:hover{
+nav > ul > li:hover{
     background-color: var(--cor3);
+}
+
+.main{
+    background-image: url(../Imagens/pngegg.png);
+    background-size: 5%;
 }
 
 .main > .dinamico > h1{
@@ -108,16 +115,19 @@ div#perfil{
 }
 
 .branco{
-    background-color: rgba(255, 255, 255, 0.651);
     position: absolute;
     width: 660px;
     top: 117px;
     left: 21px;
+    height: 345px;
+    border-radius: 0 0 23px 23px;
 }
 
 .branco > p {
     font-family: var(--fonte-padrao);
     text-indent: 50px;
+    padding: 5px;
+    font-weight: bolder;
     text-align: justify;
     align-self: center;
     font-size: 1.5em;
