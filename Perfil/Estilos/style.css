@@ -65,7 +65,9 @@ nav > ul > li > a{
 }
 
 nav > ul > li:hover{
+    cursor: pointer;
     background-color: var(--cor3);
+    transition: 0.5s;
 }
 
 .main{
