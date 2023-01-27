@@ -83,7 +83,7 @@ nav > ul > li:hover{
     overflow: hidden;
 }
 
-h2{
+.dinamico > h2{
     font-family: var(--fonte-titulo);
     text-align: center;
     color: white;
@@ -102,37 +102,74 @@ div#perfil{
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-.janela{
+.janelas{
     position: relative;
     display: flex;
-    margin: 20px auto;
-    width: 700px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
 }
 
-.janela > img{
+.janelas > .card{
+    display: flex;
     position: relative;
-    width: 800px;
+    width: 325px;
+    height: 270px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: var(--cor3);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
 }
 
-.branco{
-    position: absolute;
-    width: 660px;
-    top: 117px;
-    left: 21px;
-    height: 345px;
-    border-radius: 0 0 23px 23px;
+.janelas > .card > .conteudo{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.branco > p {
+.janelas > .card:hover > .conteudo{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.janelas > .card > .conteudo > h2{
     font-family: var(--fonte-padrao);
-    text-indent: 50px;
-    padding: 5px;
-    font-weight: bolder;
-    text-align: justify;
-    align-self: center;
-    font-size: 1.5em;
     color: white;
-    margin: auto;
+    font-weight: bold;
+}
+
+.janelas > .card > .conteudo > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+.janelas > .card > .conteudo > a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid var(--cor5);
+    background-color: var(--cor4);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--fonte-padrao);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.616);
+}
+
+.janelas > .card > .conteudo > a:hover{
+    background-color: white;
+    color: var(--cor5);
 }
 
 .cursor{

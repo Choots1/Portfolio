@@ -38,14 +38,32 @@
                 <h2>Front-End Student</h2>
             </span>
             <div id="perfil"></div>
-            <div class="janela">
-                <img src="Imagens/janela800.png" alt="janela">
-                    <div class="branco">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea deleniti vel, totam, quo mollitia quibusdam alias nostrum praesentium molestiae saepe illo aperiam dolor eum, provident facilis repellendus nemo eaque non.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea deleniti vel, totam, quo mollitia quibusdam alias nostrum praesentium molestiae saepe illo aperiam dolor eum, provident facilis repellendus nemo eaque non.</p>
+            <div class="janelas">
+                <div class="card">
+                    <div class="conteudo">
+                        <h2>Título 01</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium voluptatum quaerat vitae nostrum nihil temporibus, blanditiis velit placeat ut sed consequuntur officiis libero minima debitis labore perferendis ipsum? Eligendi.</p>
+                        <a href="#">TESTE</a>
                     </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <h2>Título 02</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium voluptatum quaerat vitae nostrum nihil temporibus, blanditiis velit placeat ut sed consequuntur officiis libero minima debitis labore perferendis ipsum? Eligendi.</p>
+                        <a href="#">TESTE</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <h2>Título 03</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium voluptatum quaerat vitae nostrum nihil temporibus, blanditiis velit placeat ut sed consequuntur officiis libero minima debitis labore perferendis ipsum? Eligendi.</p>
+                        <a href="#">TESTE</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         function mudouTamanho(){
             if (window.innerWidth >= 768){
@@ -62,6 +80,7 @@
                 menu.style.display = 'none'
             }
         }
+        VanillaTilt.init(document.querySelectorAll(".card"));
     </script>
 </body>
 </html>
