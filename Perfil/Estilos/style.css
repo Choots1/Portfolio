@@ -95,14 +95,13 @@ nav > ul > li:hover{
 
 div#perfil{
     position: relative;
-    border: 30px solid #0A0000;
     display: block;
-    height: 500px;
+    height: 400px;
     width: 400px;
     margin: auto;
     background: url(../Imagens/foto\ de\ perfil.jpeg);
     background-position: center center;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: circle(50% at 50% 50%);
 }
 
 .janelas{
