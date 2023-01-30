@@ -79,7 +79,7 @@ nav > ul > li:hover{
 .main > .dinamico > h1{
     text-align: center;
     font-family: var(--fonte-titulo);
-    font-size: 3.5em;
+    font-size: 2em;
     border-right: 2px solid rgb(255, 255, 255, .75);
     color: white;
     white-space: nowrap;
@@ -96,8 +96,8 @@ nav > ul > li:hover{
 div#perfil{
     position: relative;
     display: block;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     margin: auto;
     background: url(../Imagens/foto\ de\ perfil.jpeg);
     background-position: center center;

@@ -31,6 +31,10 @@
         margin: 0 30px;
     }
 
+    .main > .dinamico > h1{
+        font-size: 3.5em;
+    }
+
     div#perfil{
         position: relative;
         border: 30px solid #0A0000;
