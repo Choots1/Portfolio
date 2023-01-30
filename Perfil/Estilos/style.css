@@ -30,10 +30,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.main{
+    background-image: url(../Imagens/pngegg.png);
+    background-size: 5%;
+}
+
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor4));
-    height: 100%;
-    width: 100%;
 }
 
 span#burguer{
@@ -71,15 +74,10 @@ nav > ul > li:hover{
     transition: 0.5s;
 }
 
-.main{
-    background-image: url(../Imagens/pngegg.png);
-    background-size: 5%;
-}
-
 .main > .dinamico > h1{
     text-align: center;
     font-family: var(--fonte-titulo);
-    font-size: 2em;
+    font-size: 3em;
     border-right: 2px solid rgb(255, 255, 255, .75);
     color: white;
     white-space: nowrap;

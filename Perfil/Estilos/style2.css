@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url(../Fontes/static/RobotoMono-LightItalic.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'padrao';
+    src: url(../Fontes/Quicksand-VariableFont_wght.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor1: #4ACEDD;
+    --cor2: #1B9DAA;
+    --cor3: #025865;
+    --cor4: #003F4E;
+    --cor5: #0A0000;
+    --fonte-titulo: 'titulo', cursive;
+    --fonte-padrao: 'padrao', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.janela{
+    position: relative;
+    margin: 20px auto;
+    width: 800px;
+    height: 560px;
+    background-image: url(../Imagens/janela1000.png);
+}
+
+.conteudo > p{
+    position: absolute;
+    top: 134px;
+    right: 20px;
+    padding: 10px;
+    width: 740px;
+    height: 378px;
+    border-radius: 0 0 30px 30px;
+    text-indent: 20px;
+    font-size: 2em;
+    font-family: var(--fonte-padrao);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+body{
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+}
+
+span#burguer{
+    display: block;
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor2);
+    cursor: pointer;
+}
+
+nav{
+    display: none;
+    background-color: var(--cor1);
+    text-align: center;
+    box-shadow: 2px 5px var(--cor4);
+}
+
+nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 2px 2px rgb(99, 98, 98);
+}
+
+.abas{
+    display: none;
+}
+
+nav > ul > li:hover{
+    cursor: pointer;
+    background-color: var(--cor3);
+    transition: 0.5s;
+}
