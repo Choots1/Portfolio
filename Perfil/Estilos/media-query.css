@@ -30,4 +30,9 @@
         box-shadow: none;
         margin: 0 30px;
     }
+
+    div#perfil{
+        height: 500px;
+        width: 600px;
+    }
 }
