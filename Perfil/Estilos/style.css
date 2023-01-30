@@ -33,6 +33,7 @@
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor4));
     height: 100%;
+    width: 100%;
 }
 
 span#burguer{
