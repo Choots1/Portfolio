@@ -32,23 +32,25 @@
 
 .janela{
     position: relative;
-    margin: 20px auto;
-    width: 800px;
+    background-size:  contain;
     height: 100vh;
+    margin: 20px;
     background-image: url(../Imagens/janela1000.png);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .conteudo > p{
     position: absolute;
-    top: 134px;
-    right: 20px;
+    background-size: contain;
     padding: 10px;
-    width: 740px;
-    height: 378px;
-    border-radius: 0 0 30px 30px;
-    text-indent: 20px;
-    font-size: 2em;
+    height: 27%;
+    margin-top: 16.5%;
+    margin-left: 2.55%;
+    margin-right: 2.5%;
+    border-radius: 0 0 20px 16px;
+    text-indent: 30px;
+    font-size: 1.5em;
     font-family: var(--fonte-padrao);
     color: white;
     background-color: rgba(255, 255, 255, 0.719);
