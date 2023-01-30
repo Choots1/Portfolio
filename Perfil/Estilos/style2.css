@@ -34,8 +34,9 @@
     position: relative;
     margin: 20px auto;
     width: 800px;
-    height: 560px;
+    height: 100vh;
     background-image: url(../Imagens/janela1000.png);
+    background-repeat: no-repeat;
 }
 
 .conteudo > p{
