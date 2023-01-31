@@ -103,3 +103,9 @@ h1{
     white-space: nowrap;
     overflow: hidden;
 }
+
+p{
+    font-family: var(--fonte-padrao);
+    padding: 20px;
+    color: white;
+}
