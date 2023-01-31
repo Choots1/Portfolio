@@ -52,4 +52,8 @@
         margin: 20px auto;
         height: 100vh;
     }
+
+    .conteudo > p{
+        font-size: 2em;
+    }
 }

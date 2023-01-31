@@ -33,7 +33,7 @@
 .janela{
     position: relative;
     background-size:  contain;
-    height: 100vh;
+    height: 500px;
     margin: 20px;
     background-image: url(../Imagens/janela1000.png);
     background-repeat: no-repeat;
@@ -42,22 +42,20 @@
 
 .conteudo > p{
     position: absolute;
-    background-size: contain;
     padding: 10px;
-    height: 27%;
     margin-top: 16.5%;
     margin-left: 2.55%;
     margin-right: 2.5%;
     border-radius: 0 0 20px 16px;
     text-indent: 30px;
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: var(--fonte-padrao);
     color: white;
-    background-color: rgba(255, 255, 255, 0.719);
 }
 
 body{
     background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+    height: 100vh;
 }
 
 span#burguer{
