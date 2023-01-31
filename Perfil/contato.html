@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="Estilos/media-query.css">
+    <title>Contato</title>
+</head>
+<style>
+
+    section#redes img{
+        display: flexbox;
+        border-radius: 50%;
+        margin: 60px;
+        width: 50px;
+        box-shadow: 2px 2px 5px black;
+        box-sizing: border-box;   
+    }
+
+    section#redes img:hover{
+        border: 2px solid rgba(255, 255, 255, 0.644);
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px black;
+        transition: transform .3s;
+    }
+
+</style>
+<body onresize="mudouTamanho()">
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba1" checked>
+                    <a href="index.html"><label for="aba1">Home</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba2">
+                    <a href="objetivos.html"><label for="aba2">Objetivos</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba3">
+                    <a href="#"><label for="aba3">Sobre Mim</label></a>
+                </li>
+                <li>
+                    <input type="radio" name="aba" class="abas" id="aba4">
+                    <a href="#"><label for="aba4">Contato</label></a>
+                </li>
+            </ul>
+        </nav>
+        <h1>CONTATO</h1>
+        <section id="redes">
+            <a href="#"><img src="Imagens/logo-facebook.jpg" alt="Facebook"></a>
+            <a href="#"><img src="Imagens/logo-instagram.jpg" alt="Instagram"></a>
+            <a href="#"><img src="Imagens/logo-youtube.jpg" alt="Youtube"></a>
+            <a href="#"><img src="Imagens/logo-twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="Imagens/logo-github.jpg" alt="GitHub"></a>
+        </section>
+        <script>
+            function mudouTamanho(){
+                if (window.innerWidth >= 768){
+                    menu.style.display = 'block'
+                } else {
+                    menu.style.display = 'none'
+                }
+            }
+    
+            function clickMenu(){
+                if (menu.style.display == 'none'){
+                    menu.style.display = 'block'
+                } else {
+                    menu.style.display = 'none'
+                }
+            }
+        </script>
+</body>
+</html>
