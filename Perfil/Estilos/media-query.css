@@ -39,10 +39,10 @@
         position: relative;
         border: 30px solid #0A0000;
         display: block;
-        height: 500px;
-        width: 600px;
+        height: 406px;
+        width: 472px;
         margin: auto;
-        background: url(../Imagens/foto\ de\ perfil.jpeg);
+        background: url(../Imagens/foto.png) no-repeat;
         background-position: center center;
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     }

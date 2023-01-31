@@ -97,9 +97,10 @@ div#perfil{
     height: 350px;
     width: 350px;
     margin: auto;
-    background: url(../Imagens/foto\ de\ perfil.jpeg);
+    background: url(../Imagens/foto.png) no-repeat;
     background-position: center center;
     clip-path: circle(50% at 50% 50%);
+    transform: rotate(-5deg);
 }
 
 .janelas{
