@@ -53,7 +53,7 @@
         height: 100vh;
     }
 
-    .conteudo > p{
+    .main > p{
         font-size: 2em;
     }
 }
