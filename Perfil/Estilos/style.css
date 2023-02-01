@@ -106,9 +106,7 @@ div#perfil{
 .janelas{
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
+    justify-content: space-around;
     flex-wrap: wrap;
     z-index: 1;
 }
