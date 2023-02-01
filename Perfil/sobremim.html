@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="Estilos/media-query.css">
     <title>Sobre Mim</title>
 </head>
+<style>
+    @font-face {
+        font-family: 'padrao';
+        src: url(../Fontes/Quicksand-VariableFont_wght.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    p{
+        padding: 0;
+    }
+
+    .quadro{
+        margin: 10px;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .quadro > h2{
+        font-family: 'padrao', cursive;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .quadro > ul{
+        margin-left: 15px;
+        list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="white" cx="7" cy="7" r="2"/></svg>');
+    }
+
+    .quadro > ul > li > h3{
+        font-family: 'padrao', cursive;
+        color: white;
+    }
+</style>
 <body onresize="mudouTamanho()">
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
     <nav id="menu">
@@ -33,9 +68,32 @@
     </nav>
     <div class="main">
         <h1>Currículo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus ut doloremque laboriosam amet totam sequi perspiciatis dolorem ipsa quas ipsam? Saepe officia tempora delectus, iste qui eum dolor eaque pariatur!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus ut doloremque laboriosam amet totam sequi perspiciatis dolorem ipsa quas ipsam? Saepe officia tempora delectus, iste qui eum dolor eaque pariatur!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus ut doloremque laboriosam amet totam sequi perspiciatis dolorem ipsa quas ipsam? Saepe officia tempora delectus, iste qui eum dolor eaque pariatur!</p>
+            <div class="quadro">
+                <h2>Formação Acadêmica</h2>
+                <ul>
+                    <li><h3>Ensino Fundamental e Médio Completo</h3><p>Colégio Estadual Professor Cleto - Conclusão em 2015</p></li>
+                    <li><h3>Ensino Superior Incompleto</h3><p>Engenharia da Computação - PUCPR - 5 Semestres - 2019</p></li>
+                </ul>
+            </div>
+            <div class="quadro">
+                <h2>Cursos Complementares</h2>
+                <ul>
+                    <li><h3>Informática Básica e Intermediária</h3><p>Pet Cursos Profissionalizantes (1 ano) - 2012</p></li>
+                    <li><h3>Inglês Básico</h3><p>Pet Cursos Profissionalizantes (1 ano) - 2012</p></li>
+                    <li><h3>Técnico Administrativo</h3><p>CIEE (2 anos) - 2013/2015</p></li>
+                    <li><h3>Matemática Financeira</h3><p>CIEE (40 horas) - 2014</p></li>
+                    <li><h3>Curso de Cozinheiro Profissional</h3><p>Instituto Gourmet (1 ano) - 2020</p></li>
+                    <li><h3>HTML5 e CSS3</h3><p>Curso em Vídeo (40 horas)(5 Módulos)</p></li>
+                </ul>
+            </div>
+            <div class="quadro">
+                <h2>Experiências Profissionais</h2>
+                <ul>
+                    <li><h3>Brasanitas LTDA</h3><p>Jovem Aprendiz (Auxiliar Administrativo) 2014/2015</p></li>
+                    <li><h3>Padilha Centro de Treinamento</h3><p>Auxiliar Administrativo - 2019/2021</p></li>
+                    <li><h3>Chelsea Burguer</h3><p>Auxiliar de Cozinha - 2021</p></li>
+                </ul>
+            </div>
     </div>
     <script>
         function mudouTamanho(){
