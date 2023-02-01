@@ -53,6 +53,10 @@
         height: 100vh;
     }
 
+    #primeiro{
+        font-size: 2em;
+    }
+
     .main > p{
         font-size: 2em;
     }
