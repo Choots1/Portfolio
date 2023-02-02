@@ -33,7 +33,7 @@
 .janela{
     position: relative;
     background-size:  contain;
-    height: 500px;
+    height: 50%;
     margin: 20px;
     background-image: url(../Imagens/janela1000.png);
     background-repeat: no-repeat;
