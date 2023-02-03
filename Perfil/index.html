@@ -66,8 +66,10 @@
         function mudouTamanho(){
             if (window.innerWidth >= 768){
                 menu.style.display = 'block'
+                VanillaTilt.init(document.querySelectorAll(".card"))
             } else {
                 menu.style.display = 'none'
+                VanillaTilt.init(document.querySelectorAll(none))
             }
         }
 
@@ -78,7 +80,7 @@
                 menu.style.display = 'none'
             }
         }
-        VanillaTilt.init(document.querySelectorAll(".card"))
+        /*VanillaTilt.init(document.querySelectorAll(".card"))*/
     </script>
 </body>
 </html>
