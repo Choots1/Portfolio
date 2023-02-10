@@ -14,15 +14,17 @@
 }
 
 @font-face{
-    font-family: 'diabloH';
-    src: url(Fonte/DiabloHeavy.ttf) format("truetype");
-    font-weight: bolder;
+    font-family: 'padrao';
+    src: url(Fonte/Kanit-Light.ttf) format("truetype");
+    font-weight: normal;
     font-style: normal;
 }
 
 :root{
-    --fonte-forte : 'diabloH', cursive;
+    --fonte-padrao: 'padrao', cursive;
     --fonte-fraca : 'diabloL', cursive;
+    --cor1 : #1D291B;
+    --cor2 : #101614;
 }
 
 
@@ -55,8 +57,10 @@ header > h1{
 
 body{
     background-image: url(Imagens/Loading_Screen.jpg);
-    background-attachment: fixed;
-    background-size: cover;      
+    position: relative;
+    min-width: 100vh;
+    background-size: cover;
+    height: max-content;
 }
 
 section{
@@ -72,21 +76,49 @@ section{
 
 .imagem{
     background-attachment: fixed;
-    background-size: cover no-repeat;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
     height: 550px;
+    width: 50vw;
 }
 
 section#img1{
     background-image: url(Imagens/Builds/Cruzado/BuildCruzadoPunho.png);
     background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 section#img2{
     background-image: url(Imagens/Builds/Monge/BuildMongeInna.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
-li > b{
+section > h2, h3{
+    font-family: var(--fonte-fraca);
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+}
+
+section > p{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 40px;
+}
+
+section > ul > li{
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.conjunto{
     color: rgb(0, 87, 0);
+}
+
+.lendario{
+    color: rgb(255, 166, 0);
+    background-color: rgb(116, 75, 1);
 }
