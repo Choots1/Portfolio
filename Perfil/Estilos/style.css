@@ -179,6 +179,13 @@ div#perfil{
     background-size: contain no-repeat;
 }
 
+#card2 {
+    background-image: url(../Imagens/Diablo.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .cursor{
     animation: blinkCursor 500ms steps(30) infinite normal,
     typing 3s steps(30) normal both;
