@@ -27,13 +27,6 @@
     --cor2 : #101614;
 }
 
-
-html, body{
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-}
-
 header{
     background-image: url(Imagens/diablo-3-reaper-of-souls-patch-212-released-season_t2aq.jpg);
     background-position: center center;
@@ -58,7 +51,6 @@ header > h1{
 body{
     background-image: url(Imagens/Loading_Screen.jpg);
     position: relative;
-    min-width: 100vh;
     background-size: cover;
     height: max-content;
 }
