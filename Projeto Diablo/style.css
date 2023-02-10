@@ -95,6 +95,13 @@ section#img2{
     background-position: center center;
 }
 
+section#img3{
+    background-image: url(Imagens/Builds/Monge/Uliana.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 section > h2, h3{
     font-family: var(--fonte-fraca);
     font-size: 2.5em;
@@ -121,4 +128,10 @@ section > ul > li{
 .lendario{
     color: rgb(255, 166, 0);
     background-color: rgb(116, 75, 1);
+}
+
+.fim{
+    font-family: var(--fonte-fraca);
+    font-size: 3em;
+    text-align: center;
 }
