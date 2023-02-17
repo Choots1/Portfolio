@@ -11,9 +11,9 @@
 :root{
     --vermelho: hsl(7, 99%, 70%);
     --amarelo: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan-graphic-text: hsl(167, 40%, 24%);
-    --dark-blue-photography-text: hsl(198, 62%, 26%);
-    --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+    --texto-graphic: hsl(167, 40%, 24%);
+    --texto-fotografia: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
     --azul-escuro-dessaturado: hsl(212, 27%, 19%);
     --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -23,6 +23,10 @@
 
 html{
     font-size: 18px;
+}
+
+img{
+    max-width: 100%;
 }
 
 body{
@@ -36,12 +40,28 @@ p, small {
     color: var(--dark-grayish-blue);
 }
 
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
 header{
     background: url(../Imagens/Mobile/image-header.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 80vh;
     position: relative;
+}
+
+.desktop_nav{
+    display: none;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
 .triangle{
@@ -71,7 +91,52 @@ header{
     display: none;
 }
 
+.mobile_nav.open{
+    display: inline-block;
+}
+
+.mobile_nav ul li {
+    margin: 2rem;
+    color: var(--very-dark-grayish-blue);
+    opacity: 0.8;
+    font-family: 'Barlow', serif;
+    font-weight: 700;
+    transition: all 0.4s ease-in;
+  }
+  
+  .mobile_nav ul li:hover {
+    transform: scale(1.04);
+  }
+  
+  .mobile_nav ul li.contact {
+    background-color: var(--amarelo);
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 50%;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 0 0 5rem;
+  }
+
+  .mobile_nav ul li.contact {
+    background-color: var(--amarelo);
+    padding: 1rem;
+    border-radius: 5rem;
+    width: 50%;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    margin: 0 0 0 5rem;
+}
+
 .titulo{
+    text-align: center;
+}
+
+.titulo h1{
     margin: 3.7rem 0 2.7rem;
     font-size: 2.8rem;
     text-transform: uppercase;
@@ -83,9 +148,7 @@ header{
     text-align: center;
 }
 
-.ovo ,.taca{
-    background-position: center;
-    background-size: cover;
+.ovo , .taca{
     height: 45vh;
 }
 
@@ -95,10 +158,29 @@ header{
 
 .ovo{
     background: url(../Imagens/Mobile/ovo.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .taca{
     background: url(../Imagens/Mobile/image-stand-out.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards .text{
+    height: 50vh;
+}
+
+.cards .text p {
+    padding: 1rem 1.5rem;
+    line-height: 1.3;
+}
+
+.cards .text h2 {
+    font-size: 2.2rem;
+    color: var(--very-dark-desaturated-blue);
+    margin: 3rem 1rem 1rem;
 }
 
 .botao{
@@ -119,6 +201,10 @@ header{
     background-color: var(--vermelho);
 }
 
+.botao.transform, .botao.standout {
+    position: relative;
+}
+
 .botao.transform::after, .botao.standout::after {
     content: '';
     height: 7px;
@@ -128,6 +214,18 @@ header{
     left: -0.35rem;
     opacity: 0.4;
     border-radius: 3px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+}
+
+.photography_text, .graphic_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .cherry{
@@ -209,4 +307,24 @@ ul {
 
 .creditos a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    body {
+      max-width: 100%;
+    }
+
+    .desktop_nav ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin-right: 2.5rem;
+    }
+
+    .desktop_nav ul li {
+        font-family: 'Barlow', serif;
+        font-size: 0.9rem;
+        color: white;
+        transition: all 0.4s ease-in-out;
+    }
 }

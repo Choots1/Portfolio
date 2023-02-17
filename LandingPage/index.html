@@ -26,14 +26,13 @@
                 <img src="Imagens/Mobile/icon-hamburger.svg" alt="hamburger">
             </div>
             <nav class="mobile_nav">
-                <div class="triangle">
-                    <ul>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li class="contact">Contact</li>
-                    </ul>
-                </div>
+                <div class="triangle"></div>
+                <ul>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li class="contact">Contact</li>
+                </ul>
             </nav>
         </div>
         <div class="titulo">
@@ -46,7 +45,7 @@
             <div class="card transform">
                 <div class="ovo"></div>
                 <div class="text">
-                    <h1>Transform your brand</h1>
+                    <h2>Transform your brand</h2>
                     <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
                     <button class="botao transform">Learn More</button>
                 </div>
@@ -54,7 +53,7 @@
             <div class="card standout">
                 <div class="taca"></div>
                 <div class="text">
-                    <h1>Stand out to the right audience</h1>
+                    <h2>Stand out to the right audience</h2>
                     <p>Using a collaborative formula of designers, reserarchers, photographers, videographers, and copyrighters, we'll build and extend your brand in digital places.</p>
                     <button class="botao standout">Learn More</button>
                 </div>
@@ -118,5 +117,13 @@
             <a href="https://github.com/Choots1?tab=repositories" target="_blank">Níkolas Ferrante</a>
         </p>
     </footer>
+    <script>
+        const open_btn = document.querySelector('.open');
+        const navbar = document.querySelector('.mobile_nav');
+
+        open_btn.addEventListener('click', () => {
+        navbar.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
