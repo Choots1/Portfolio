@@ -31,6 +31,11 @@ body{
     max-width: 390px;
 }
 
+p, small {
+    font-family: 'Barlow', serif;
+    color: var(--dark-grayish-blue);
+}
+
 header{
     background: url(../Imagens/Mobile/image-header.jpg) no-repeat;
     background-size: cover;
@@ -106,11 +111,15 @@ header{
     text-transform: uppercase;
 }
 
-.transform::after{
+.botao.transform::after{
     background-color: var(--amarelo);
 }
 
-.botao .transform::after, .standout::after {
+.botao.standout::after{
+    background-color: var(--vermelho);
+}
+
+.botao.transform::after, .botao.standout::after {
     content: '';
     height: 7px;
     width: 110%;
@@ -121,3 +130,83 @@ header{
     border-radius: 3px;
 }
 
+.cherry{
+    background: url(../Imagens/Mobile/image-graphic-design.jpg) no-repeat;
+}
+
+.orange{
+    background: url(../Imagens/Mobile/image-photography.jpg) no-repeat;
+}
+
+.cherry, .orange{
+    background-position: top;
+    background-size: 100%;
+    height: 32rem;
+}
+
+.photography__text, .graphic__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.testimonial small {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.nuvem{
+    background: url(../Imagens/Mobile/nuvem.jpg) no-repeat;
+}
+
+.laranja{
+    background: url(../Imagens/Mobile/laranja.jpg) no-repeat;
+}
+
+.acucar{
+    background: url(../Imagens/Mobile/acucar.jpg) no-repeat;
+}
+
+.cone{
+    background: url(../Imagens/Mobile/cone.jpg) no-repeat;
+}
+
+.acucar, .laranja, .cone, .nuvem {
+    background-position: center;
+    background-size: 100%;
+    height: 10rem;
+    width: 10.7rem;
+}
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: hsl(168, 66%, 52%);
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.creditos a {
+    color: hsl(228, 45%, 44%);
+}
