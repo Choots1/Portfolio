@@ -37,7 +37,7 @@ body{
 
 p, small {
     font-family: 'Barlow', serif;
-    color: var(--dark-grayish-blue);
+    color: var(--cinza-p);
 }
 
 li{
@@ -102,13 +102,13 @@ header{
     font-family: 'Barlow', serif;
     font-weight: 700;
     transition: all 0.4s ease-in;
-  }
+}
   
-  .mobile_nav ul li:hover {
+.mobile_nav ul li:hover {
     transform: scale(1.04);
-  }
+}
   
-  .mobile_nav ul li.contact {
+.mobile_nav ul li.contact {
     background-color: var(--amarelo);
     padding: 1rem;
     border-radius: 5rem;
@@ -118,9 +118,9 @@ header{
     text-transform: uppercase;
     color: black;
     margin: 0 0 0 5rem;
-  }
+}
 
-  .mobile_nav ul li.contact {
+.mobile_nav ul li.contact {
     background-color: var(--amarelo);
     padding: 1rem;
     border-radius: 5rem;
@@ -371,6 +371,57 @@ ul {
       max-width: 100%;
     }
 
+    header{
+        background: url(../Imagens/Desktop/image-header.jpg);
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        padding: 0 1rem 0;
+    }
+
+    .card{
+        display: flex;
+        align-items: center;
+    }
+
+    .botao{
+        margin-left: 1.2rem;
+    }
+
+    .cards .text{
+        height: 50vh;
+    }
+
+    .cards .text h2{
+        font-weight: 900;
+    }
+
+    .cards .text p{
+        font-size: 0.92rem;
+        padding: 0 0 0 1rem;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+
+    .transform{
+        flex-direction: row-reverse;
+    }
+
+    .transform .text, .standout .text{
+        width: 49.9vw;
+        text-align: left;
+        padding: 0 6rem;
+    }
+
+    .ovo{
+        background: url(../Imagens/Desktop/image-transform.jpg) no-repeat;
+    }
+
+    .taca{
+        background: url(../Imagens/Desktop/image-stand-out.jpg) no-repeat;
+    }
+
     .desktop_nav ul {
         display: flex;
         align-items: center;
@@ -383,5 +434,24 @@ ul {
         font-size: 0.9rem;
         color: white;
         transition: all 0.4s ease-in-out;
+    }
+
+    .ovo, .taca{
+        background-position: center;
+        background-size: cover;
+        height: 75vh;
+        width: 50.1vw;
+    }
+
+    .join{
+        flex-direction: row;
+    }
+
+    .cherry{
+        background: url(../Imagens/Desktop/image-graphic-design.jpg) no-repeat;
+    }
+
+    .orange{
+        background: url(../Imagens/Desktop/image-photography.jpg) no-repeat;
     }
 }
