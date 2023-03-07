@@ -186,6 +186,13 @@ div#perfil{
     background-repeat: no-repeat;
 }
 
+#card3{
+    background-image: url(../Imagens/landingpage.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .cursor{
     animation: blinkCursor 500ms steps(30) infinite normal,
     typing 3s steps(30) normal both;
